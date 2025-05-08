@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Gidole&display=swap');
+
+* {
+    font-family: "Gidole", sans-serif;
+}
+
+body {
+    background-color : gainsboro;
+}
+
+.container {
+    max-width: 920px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;     /* 세로로 정렬 */
+    justify-content: space-between;
+    margin: 0 auto;     /* 마진을 사용해 중앙에 배치 */
+}
+
+.header {
+    display: flex;
+    align-items: center;    /* 세로축 기준 중앙 */
+    justify-content: center;    /* 가로축 기준 중앙 */
+    color: gray;
+    border-bottom: 2px solid gray; /* 하단에 가로줄 만들기 */
+    height: 45px;
+}
+
+.header h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 20;
+}
+
+.info a {
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.info a:hover{
+    color: rgb(209, 176, 246);
+}
+
+.input-container{
+    background-color: gainsboro;
+    box-shadow: 0px 2px 10px gray;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    bottom: 0;
+    border-radius: 50px;
+}
+
+#user-input {
+    background-color: white;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    padding: 10px 10px 10px 20px;
+    flex: 7;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 50px;
+}
+
+#user-input::placeholder{
+    color: #8e8e8e;
+    font-weight: 400;
+}
+
+#send-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 50px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    cursor: pointer;
+    margin-left: 15px;
+    transition: all 0.3s ease;
+}    
+
+#send-button:hover{
+    background-color:rgb(100, 100, 100);
+}
